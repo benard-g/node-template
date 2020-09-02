@@ -75,3 +75,22 @@ Once jest is installed, you can run the automated tests located in the `test` fo
 
 You can also run all of the tests (build + linter + automated tests) using the following command. It can be useful in your CI :
 - `yarn test`
+
+#### Enhanced source-map (optional)
+
+Because we are transpiling our typescript into javascript and then executing the javascript code,
+we are loosing precious information in the Error stacktrace.
+In order to correct the stacktrace and have it reference the original typescript code, you can install the package [source-map-support](https://github.com/evanw/node-source-map-support).
+
+```sh
+# Install source-map-support along with its typings
+yarn add source-map-support
+yarn add -D @types/source-map-support
+```
+
+Then, at the entry point of your project, add the following import.
+
+```ts
+// inside of src/main.ts
+import 'source-map-support/register';
+```
