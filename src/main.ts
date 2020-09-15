@@ -1,3 +1,5 @@
+// import 'source-map-support/register';
+
 async function main(): Promise<void> {
   console.log('Hello World !');
 }
