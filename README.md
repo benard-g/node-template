@@ -50,7 +50,7 @@ We will use a combination of [eslint](https://eslint.org) and [prettier](https:/
 
 ```sh
 # Install eslint with typescript support
-yarn add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+yarn add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-simple-import-sort
 
 # Install prettier and plug it to eslint
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier

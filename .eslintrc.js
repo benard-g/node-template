@@ -14,6 +14,7 @@ module.exports = {
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
+  plugins: ['simple-import-sort'],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -24,5 +25,7 @@ module.exports = {
       { vars: 'all', args: 'all', argsIgnorePattern: '^_' },
     ],
     'no-return-await': 'error',
+    'simple-import-sort/sort': 'error',
+    'sort-imports': 'off',
   },
 };
