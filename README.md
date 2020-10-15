@@ -39,6 +39,9 @@ yarn add -D typescript @types/node
 
 # Install tsc-watch to enable hot-reloading in development mode
 yarn add -D tsc-watch
+
+# Install rimraf
+yarn add -D rimraf
 ```
 
 You can now build and run the project using the following commands :

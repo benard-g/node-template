@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node build/src/main.js",
     "build": "tsc",
+    "build:clean": "rimraf build",
     "dev": "tsc-watch --onSuccess 'yarn start'",
     "test": "yarn build && yarn test:lint && yarn test:jest",
     "test:lint": "eslint --max-warnings=0 '{src,test}/**/*.{js,jsx,ts,tsx}'",
