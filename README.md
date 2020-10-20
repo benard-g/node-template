@@ -24,9 +24,9 @@ nvm install --lts
 node --version > .nvmrc
 
 # For bash and zsh users
-npx json -I -f package.json -e "this.engines.node="$(node --version)
+npx json -I -f package.json -e 'this.engines.node="'$(node --version)'"'
 # For fish users
-npx json -I -f package.json -e "this.engines.node="(node --version)
+npx json -I -f package.json -e 'this.engines.node="'(node --version)'"'
 ```
 
 #### Typescript
