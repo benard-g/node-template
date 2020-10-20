@@ -9,7 +9,7 @@
     "types": ["node", "jest"],
     "composite": true,
     "incremental": true,
-    "tsBuildInfoFile": "./build/tsbuildinfo.json",
+    "tsBuildInfoFile": "./build/ts-build-info.json",
 
     /* Strict Type-Checking Options */
     "strict": true,
