@@ -65,8 +65,15 @@ yarn add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 # Install prettier and plug it to eslint
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 
-# Install some useful eslint plugins
-yarn add -D eslint-plugin-simple-import-sort eslint-plugin-jsdoc
+
+# Install support for imports sorting
+yarn add -D eslint-plugin-simple-import-sort
+
+# Make all error warnings (can be useful in react build for example)
+yarn add -D eslint-plugin-only-warn
+
+# Optional: install support for jsdoc (optional)
+yarn add -D eslint-plugin-jsdoc
 ```
 
 You can now run the linter using the following commands :
